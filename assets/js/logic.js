@@ -58,15 +58,16 @@ function questionClick() {
 
     timerEl.textContent = time;
 
-    sfxWrong.document.style.textDecorationColor = "red";
+
 
     feedbackEl.textContent = "Wrong!";
-
+    $(sfxWrong).css("color", "red");
   } else {
 
-    sfxRight.document.style.textDecorationColor = "green";
+
 
     feedbackEl.textContent = "Correct!";
+    $(sfxRight).css("color", "green");
   }
 
   feedbackEl.setAttribute("class", "feedback");
