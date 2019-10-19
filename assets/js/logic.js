@@ -61,13 +61,13 @@ function questionClick() {
 
 
     feedbackEl.textContent = "Wrong!";
-    $(sfxWrong).css("color", "red");
+    $(sfxWrong).css("color", "red"); // not working
   } else {
 
 
 
     feedbackEl.textContent = "Correct!";
-    $(sfxRight).css("color", "green");
+    $(sfxRight).css("color", "green"); // not working
   }
 
   feedbackEl.setAttribute("class", "feedback");
