@@ -45,9 +45,6 @@ function getQuestion() {
   });
 }
 
-var sfxRight
-var sfxWrong
-
 function questionClick() {
   if (this.value !== questions[currentQuestionIndex].answer) {
     time -= 10;
@@ -61,13 +58,13 @@ function questionClick() {
 
 
     feedbackEl.textContent = "Wrong!";
-    $(sfxWrong).css("color", "red"); // not working
+    $(feedbackEl).css("color", "red"); // fixed
   } else {
 
 
 
     feedbackEl.textContent = "Correct!";
-    $(sfxRight).css("color", "green"); // not working
+    $(feedbackEl).css("color", "lightgreen"); // fixed
   }
 
   feedbackEl.setAttribute("class", "feedback");
